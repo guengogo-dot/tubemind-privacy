@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TubeMind AI Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for the TubeMind AI Chrome extension.">
+  <style>
+    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.6; max-width: 860px; margin: 0 auto; padding: 32px 20px 64px; color: #1f2937; }
+    h1, h2 { line-height: 1.25; }
+    h1 { margin-bottom: 0.25rem; }
+    .updated { color: #6b7280; margin-top: 0; }
+    code { background: #f3f4f6; padding: 0.1rem 0.3rem; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <h1>TubeMind AI Privacy Policy</h1>
+  <p class="updated">Last updated: August 8, 2026</p>
+
+  <p>TubeMind AI is a Chrome extension for inspecting, searching, navigating, copying, and optionally summarizing YouTube video transcripts from a sidebar on YouTube watch pages.</p>
+
+  <h2>Data TubeMind AI Processes</h2>
+  <p>TubeMind AI may process the following data in the browser:</p>
+  <ul>
+    <li>the current YouTube page URL and video ID;</li>
+    <li>YouTube caption metadata and transcript/caption responses for the active video;</li>
+    <li>transcript search queries entered in the extension;</li>
+    <li>optional AI provider settings, including provider endpoint/base URL, model, API key, and external AI consent state;</li>
+    <li>optional AI-generated summary content for the active video/transcript.</li>
+  </ul>
+
+  <h2>How Data Is Used</h2>
+  <p>The data above is used only to provide TubeMind AI's user-facing features, including loading and displaying transcripts, searching transcript text, jumping to timestamps, copying transcripts, and optionally generating an AI summary.</p>
+
+  <h2>Data Transmission</h2>
+  <p>TubeMind AI does not operate a TubeMind-hosted backend service and does not send transcript content, search queries, browsing history, or personal information to a TubeMind AI server.</p>
+  <p>The extension may request caption resources from YouTube to load transcripts for the video the user is currently viewing.</p>
+  <p>Transcript search and normal transcript navigation run locally in the browser extension context.</p>
+  <p>If the user explicitly configures an OpenAI-compatible provider and grants external AI consent, TubeMind AI sends transcript-derived content required for summary generation directly to the user's configured external provider. The request uses the user-supplied Bearer API key. TubeMind AI does not operate or control that external provider.</p>
+
+  <h2>Data Storage</h2>
+  <p>AI configuration is stored locally in the browser's <code>localStorage</code>. This may include provider information, endpoint/base URL, model, API key, and external AI consent state.</p>
+  <p>Generated summary content may also be stored locally for the relevant video/transcript generation.</p>
+  <p>TubeMind AI does not persist local transcript search queries through Chrome storage in the current implementation.</p>
+
+  <h2>Sharing of Data</h2>
+  <p>TubeMind AI does not sell user data.</p>
+  <p>Transcript-derived content is shared with an external AI provider only when the user has configured that provider, supplied the necessary credentials, granted external AI consent, and requests AI Summary generation.</p>
+
+  <h2>Permissions</h2>
+  <p>TubeMind AI requests only the permissions needed for its current functionality:</p>
+  <ul>
+    <li><code>scripting</code> — to read YouTube runtime caption metadata through Manifest V3 main-world execution;</li>
+    <li><code>https://www.youtube.com/*</code> host access — to run on YouTube pages, load transcript-related data, render the sidebar, and interact with the active YouTube video for timestamp navigation.</li>
+  </ul>
+
+  <h2>Security</h2>
+  <p>TubeMind AI is designed so that API keys are not exposed through public configuration, UI state, or diagnostic output. External AI requests are made only after explicit user configuration and consent.</p>
+
+  <h2>Data Retention and Deletion</h2>
+  <p>Locally stored AI configuration and generated summaries remain in the user's browser until they are changed or removed by the user, the extension, or browser storage controls. Data sent to an external AI provider is subject to that provider's own privacy and retention practices.</p>
+
+  <h2>Changes to This Policy</h2>
+  <p>If TubeMind AI's data-handling practices materially change, this Privacy Policy will be updated to reflect those changes.</p>
+
+  <h2>Contact</h2>
+  <p>For privacy or release-review questions, use the Chrome Web Store developer contact associated with TubeMind AI.</p>
+</body>
+</html>

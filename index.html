@@ -15,7 +15,7 @@
 </head>
 <body>
   <h1>TubeMind AI Privacy Policy</h1>
-  <p class="updated">Last updated: August 8, 2026</p>
+  <p class="updated">Last updated: August 13, 2026</p>
 
   <p>TubeMind AI is a Chrome extension for inspecting, searching, navigating, copying, and optionally summarizing YouTube video transcripts from a sidebar on YouTube watch pages.</p>
 
@@ -51,8 +51,15 @@
   <p>TubeMind AI requests only the permissions needed for its current functionality:</p>
   <ul>
     <li><code>scripting</code> — to read YouTube runtime caption metadata through Manifest V3 main-world execution;</li>
+    <li><code>tabs</code> — to identify and coordinate with the active YouTube tab for transcript loading and timestamp navigation;</li>
     <li><code>https://www.youtube.com/*</code> host access — to run on YouTube pages, load transcript-related data, render the sidebar, and interact with the active YouTube video for timestamp navigation.</li>
   </ul>
+
+  <h2>Remote Code</h2>
+  <p>TubeMind AI does not download or execute remote JavaScript or WebAssembly code. The extension's executable code is packaged with the extension. Optional AI Summary requests send data to the user-configured provider as a service request; they do not load executable code into the extension.</p>
+
+  <h2>Limited Use</h2>
+  <p>TubeMind AI uses user data only as necessary to provide and improve its disclosed single purpose and user-facing features. TubeMind AI does not sell user data, does not use user data for advertising, and does not use user data to determine creditworthiness or for lending purposes.</p>
 
   <h2>Security</h2>
   <p>TubeMind AI is designed so that API keys are not exposed through public configuration, UI state, or diagnostic output. External AI requests are made only after explicit user configuration and consent.</p>
